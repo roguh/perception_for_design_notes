@@ -1,0 +1,579 @@
+\newcommand{\e}[1]{\textbf{#1}}
+
+\section{Visualization Guidelines}
+
+%\begin{multicols}{2}
+
+\subsection{Chapter 1}
+
+\e{Foundation for a science of data visualization.}
+
+\begin{compactenum}
+
+    \item Design graphic representations of data by taking into account human
+        sensory capabilities in such a way that \e{important} data
+        elements/patterns can be \e{perceived}
+
+    \item Important data should be visually distinct (which items are more
+        findable?)
+
+    \item Visual distinction should match the data's magnitude
+
+    \item Graphical symbols should be \e{standardized} within and across
+        applications
+
+    \item Choose the tool that allows for the most work per time,
+        \e{save time}
+
+    \item Novel solutions are good if they outweigh the \e{cost of learning}
+
+    \item Unless novelty outweighs inconsistency, pick consistent tools
+
+    \item Effort spend on development should equal expected ``profit''
+
+\end{compactenum}
+
+\subsection{Chapter 2}
+\e{The environment, optics, resolution and the display}
+
+\begin{compactenum}
+
+    \item \e{Lambertian} shading to reveal shapes of smooth surfaces
+
+    \item Use \e{specular} shading to reveal fine surface details. Object/light
+        motion should be enabled.
+
+    \item \e{Cast shadows} for large-scale spatial relationships. Do not use
+        unless the visual cost is made up for in benefits.
+
+    \item Ambient \e{occlusion} for 2D shape perception, where no shading info
+        is provided.
+
+    \item Agumented-reality: info linked to an external object should be at the
+        \e{same focal distance}
+
+    \item Augmented reality: if info is unrelated to externals, the aug-info
+        should seem \e{closer than everything}
+
+    \item Head-mounted display: text should be no more than \e{18 degrees}
+
+    \item \e{40 degree} viewing angle for data analysis
+
+    \item wrap-around displays to give a sense of ``presence''
+
+    \item Avoid high-contrast grating patterns, especially if flickering
+        between \e{5Hz and 50Hz}.
+
+    \item \e{Antialias} whenever possible, especially if there are fine details
+
+\end{compactenum}
+
+\subsection{Chapter 3}
+
+\e{Lightness, brightness, contrast, constancy}
+
+\begin{compactenum}
+
+    \item \e{Avoid gray} scale as a method for representing more than 2 -- 4 numerical
+    values
+
+    \item Consider using \e{cornsweet contours} instead of simple lines to define
+    convoluted (crazy) bounded regions
+
+    \item Consider using \e{luminance contrast} as a highlighting method. Either
+    reduce contrast of unimportant items or increase local background's
+    contrast around important items (haloing).
+
+    \item Use  minimum \e{3:1 luminance contrast} ratio when details such as
+    texture variation, small-scale patterns or text exist. 10:1 is optimal
+    for text.
+
+    \item If \e{subtle grey-level} variations are important, create
+        low-luminance contrast between object and its background.
+
+    \item A light neutral colored wall \e{behind the screen} should reflect
+        an amount of light comparable to that emitted by the screen.
+        The wall facing the screen should be dark and of low reflectance.
+        Avoid shining lights on the monitor.
+
+    \item Minimal light should fall on the projector screen. \e{Shields},
+        low-reflectance (mid to dark gray) walls are desirable.
+
+\end{compactenum}
+
+\subsection{Chapter 4}
+
+\e{Color}
+
+\begin{compactenum}
+
+    \item Use more \e{saturated colors} for small symbols/lines/areas. Less
+        saturated for larger areas
+
+    \item Small symbols with a color different from the background's should
+        have a \e{luminance contrast} (See 3.4)
+
+    \item Adequate luminance contrast for the perception of \e{stereoscopic
+        depth}
+
+    \item Adequate luminance contrast for the perception of \e{motion}
+
+    \item If shading to define a \e{curved surface}, use luminance instead
+        of chroma. (See 2.1)
+
+    \item If large areas have equiluminous coloring, use \e{thin borders} with
+        large luminance differences
+
+    \item Saturation should be used to encode \e{no more than 3} values
+
+    \item Red-green, yellow-blue, white-black are independent.
+
+    \item In an interface for design, allow the user to \e{change background} to
+        see effects on coloring
+
+    \item Easy-to-remember color codes: provide a \e{color palette}
+
+    \item Pure red, green, yellow and blue to color code \e{small symbols}.
+
+    \item Small color-coded symbols: ensure \e{luminance and chromatic} contrast
+        with background
+
+    \item Colored symbols isoluminant against parts of background? Add a
+        \e{border} with a highly contrasting luminance (relative to symbol).
+
+    \item To ensure color-blind accesibility, use \e{yellow-blue} variance.
+
+    \item \e{No more than 10 colors} if precise identification is desired,
+        especially if varying backgrounds.
+
+    \item \e{Low saturation colors for large} areas. Light colors are best, more
+        of these available.
+
+    \item Large backgrounds overlaid with small colored symbols?
+        High-value/\e{pastel colors for background, high saturation} for
+        symbols
+
+    \item If text is highlighted, ensure \e{luminance contrast} with background.
+
+    \item Cultures have a \e{similar high-importance color} sequence, varying
+        low-importance. Consider this in maps.
+
+    \item If extremes or other patterns must be seen, use a
+        color sequence with \e{monotonically increasing luminance}. Carefully
+        space colors if discriminate steps are wanted
+
+\end{compactenum}
+
+\subsection{Chapter 5}
+
+\e{Visual salience and finding information}
+
+\begin{compactenum}
+
+    \item Minimize the cost of visual searches by making displays as compact
+        as possible. \e{Saccades of 5 degrees} or less.
+
+    \item Visually distinct aspects should be represented by \e{distinct channels}.
+
+    \item Symbols should be \e{distinct from background and other symbols}, if
+        search is needed.
+
+    \item Make symbols as \e{distinct from each other} as possible; orientation and
+        spatial frequency (size difference).
+
+    \item Same for symbols and background patterns.
+
+    \item Strong preattentive cues \e{before weak ones} if search is critical.
+
+    \item Maximum popout: a symbol should be the \e{only object in a channel}
+
+    \item \e{Asymmetric preattentive} cues for highlighting
+
+    \item Highlights should occupy the \e{least used feature dimension}.
+
+    \item Use \e{subtle blinking or motion} if color and shape channels are full.
+
+    \item Use \e{redundant coding} where possible
+
+    \item If symbols are to be preattentively distinct, avoid using
+        \e{conjunctions} of graphical properties.
+
+    \item If two distinct attributes must be highlighted, consider using
+        motion and color/shape or another \e{valid conjunctive pair}.
+
+    \item If variables need to be seen holistically, map the variables to
+        \e{integral} glyph properties
+
+    \item If variables need to be seen analytically, map the variables to
+        \e{separable} glyph properties
+
+    \item \e{Quantity} shown by size, lightness on a dark background, darkness
+        on light background, color saturation, vertical position
+
+    \item Ideally, use \e{length or height} to represent quantity; maybe
+        area. Never use 3D volume.
+
+    \item Combine heterogeneous display channels with meaningful \e{mappings
+        between} data and graphical features
+
+    \item User interrupts must be made stronger if \e{cognitive load} is high.
+
+\end{compactenum}
+
+\subsection{Chapter 6}
+
+\e{Static and moving patterns}
+
+\begin{compactenum}
+
+    \item Symbols with related information should maintain \e{proximity}
+
+    \item Grid layout = low visual channel properties for \e{rows/columns}.
+
+    \item Use lines or ribbons of color to show \e{relationships}.
+
+    \item Use symmetry to make pattern comparisons easier, be sure patterns are
+        $>2$ degrees horizontally, and $>1$ degree vertically. Symmetry should
+        be along horizontal/vertical axes.
+
+    \item Related information inside a \e{closed contour}.
+
+    \item \e{Overlapping regions} = combine line contour, color, texture,
+        Cornsweet contours.
+
+    \item Combination of closure, common region and layout to ensure
+        data entities represented by patterns will be \e{figure and not ground}.
+
+    \item Use contours \e{tangential} to streamlines to reveal orientation.
+
+    \item Flow direction in vector field = use \e{streamlets}.
+
+    \item \e{Vector field} = more distinct elements indicate greater strength or
+        speed. Wider, longer, more contrasting, faster moving.
+
+    \item \e{Texture for continuous} map variables. Most effect when data varies
+        smoothly.
+
+    \item To make nominal coding textures \e{distinct}, make them differ as much as
+        possible in orientation and element size. Also vary randomness in
+        spacing of elements.
+
+    \item \e{Simple texture} parameters such as element size/density only when
+        fewer than five ordinal steps must be distinguished
+
+    \item \e{Bivariate scalar} field? Map one to color and one to texture
+        variations.
+
+    \item Design textures so quantitative values can be judged? Visually order
+        so that \e{small} can be differentiated from \e{large}.
+
+    \item When using overlapping textures to separate overlapping regions,
+        avoid patterns that can cause \e{aliasing} when combined
+
+    \item Textures in combination with background colors in overlapping
+        regions? Use \e{lacy textures}.
+
+    \item Lacy textures in combination with colors for \e{overlapping} regions.
+        Ensure luminance contrast between texture in foreground and
+        color-coded data in background.
+
+    \item Discrete data with more than four dimensions? Use color-enhanced
+        generalized \e{draftsman's plots with brushing}.
+
+    \item \e{Standardize mappings} of data to patterns within and across
+        applications.
+
+    \item Search for infrequent targets? Insert \e{retraining sessions} and give
+        feedback on failure/success.
+
+    \item Glyphs = small enclosed \e{shapes} for entity. \e{Color, shape and size} for
+        attributes.
+
+    \item Connecting \e{lines, enclosure, grouping and attachment} to show
+        relationships between entities. Shape/color/thickness for types.
+
+    \item Alternative to arrows in directed graphs = \e{tapered lines} with
+        broadest end at source node.
+
+    \item Use \e{closed contours}, areas of texture or color to denote regions.
+        Color/texture/boundary style to show type.
+
+    \item Use \e{lines} to represent paths. Line color for type of linear feature.
+
+    \item Use \e{small, closed shapes} to represent point entities (cities, etc).
+        Use color, texture or boundary style to show attributes.
+
+    \item Use treemap if only \e{leaf nodes and a quantity} they are associated
+        with matter
+
+    \item Node-link representation when \e{hierarchy and non-leaf nodes} matter and
+        quantitative attributes are less important.
+
+    \item Animation? Motion between \e{0.5 to 4 degrees} of visual angle.
+
+\end{compactenum}
+
+
+
+
+\subsection{Chapter 7}
+
+\e{Visual objects and data objects}
+
+\begin{compactenum}
+
+\item 3D size judgments? Use the \e{best possible set} of depth cues.
+
+\item Minimize perceived distortions from off-axis 3D spaces, avoid \e{wide
+    viewing angles}, horizontal viewing angle below 30 degrees.
+
+\item 3D height field data? Use \e{draped grids} to enhance shape information.
+    Best if data varies smoothly.
+
+\item Use \e{cast shadows} to tie objects to a surface that defines depth. Surface
+    should have strong depth cues (grid texture, etc) and be simple, objects
+    should be close to it
+
+\item 3D depth relationships? Use structure-from-motion by rotating the scene
+    around point of interest.
+
+\item Stereoscopic? Avoid placing objects \e{too close} to the screen where their
+    edges are clipped.
+
+\item 3D stereoscopic? Use highest possible horizontal resolution. Excellent
+    \e{spatial and temporal antialiasing}
+
+\item Adjust \e{virtual eye separation} to optimize perceived depth while
+    minimizing diplopia.
+
+\item 3D with strong and gridded ground plane? Use \e{drop lines} to add depth
+    information for small numbers of discrete isolated objects.
+
+\item 3D? Use \e{halos} to enhance occlusion if this is an important depth cue and
+    overlapping objects have same color/luminance
+
+\item 3D? Use the depth cues for the most \e{critical tasks}.
+
+\item \e{3D node-link structures}? Use motion parallax, stereoscopic, halos
+
+\item Textures to reveal surface shapes especially if in stereo. Only good for
+    smooth surfaces, and texture is otherwise unused. Linear components, if
+    one texture is on top of another, make it lacy and see-through
+
+\item Rotating \e{surface and stereoscopic} viewing to enhance 3D shape.
+
+\item \e{Bivariate scalar} field maps. Use shaded height field and color for
+    the two. Shaded variable should be relatively smooth.
+
+\item \e{Depth in 3D scatterplot}, rotate or oscillate a point cloud around a
+    vertical axis. Use stereoscopic if possible.
+
+\item 3D \e{cloud of points}, must judge morphology of boundary? Use cloud surface
+    to shade points.
+
+\item 3D trajectories = \e{shaded tube or box} with periodic bands for orientation
+    cues. Motion parallax and stereoscopic if possible.
+
+\item Stereoscopic viewing when \e{hand movements} are critical. Use proxy for
+    hand if possible.
+
+\item 3D environments with 1-to-1 mapping between hand and objects, ensure
+    \e{relative positions} are correct. Minimize rotational mismatch
+    ($>30$ degrees).
+
+\item Vertical polarity in 3D space = clear reference \e{ground} plane and
+    gravity affected \e{familiar objects} on it
+
+\item Vivid sense of \e{presence} in 3D = large FOV, smooth motion, lots of detail
+
+\end{compactenum}
+
+
+
+
+\subsection{Chapter 8}
+
+\e{Space perception and the display of data in space}
+
+\begin{compactenum}
+
+\item Optimal identification = make important patterns, complex objects have
+    a 4 to 6 degree angle. Only a gradual penalty if not so.
+
+\item Use an object display if standardized sets of data must be analyzed
+    repeatedly and data can be mapped to objects
+
+\item Design object displays such that numbers are tied to recognizable objects
+    representing components
+
+\item Design layouts using connecting elements that clearly indicate
+    physical connections between components
+
+\item Design glyphs to have emergent properties revealing effect of important
+    interactions between variables
+
+\item Display glyphs should be more salient when critical values are reached
+
+\item Represent components with geons (smooth and shaded spheres, cylinders,
+    cones, boxes)
+
+\item Use color/texture of geons to represent secondary objects
+
+\item Fewer than 30 components, entities/relationships must be shown = use
+    geon diagram
+
+\item Represent relationship by joints, tubes. Small geon attached to bigger
+    one to show component relationship.
+
+\item Geon (easy to perceive, 3D) shapes to represent primary attribute of entities
+
+\item 3D diagrams = lay as much as possible in 2D plane orthogonal to line
+    of sight. Make sure all connections are visible.
+
+\item 3D diagram = use transparent bag to express part-of relationhips
+
+\item Entities and links = size/thickness to represent strength.
+
+\item Efficient and compact expression of human emotion, use emoticons
+
+\item Visual image that represents a class of things = use canonical example
+    in its ``normal'' orientation but only if it exists.
+
+\item Use icons for pedagogical purposes in infographics. Use only when no
+    canonical or cultural image is available
+
+\item Large number of data points = symbols instead of words/icons
+
+\item Use words directly where the numbers of symbolic objects in each
+    category is few and space is available
+
+\item use Gestalt principles of proximity, connectedness and common region to
+    link label and figure
+
+\end{compactenum}
+
+
+
+
+\subsection{Chapter 9}
+
+\e{Images, words and gestures}
+
+\begin{compactenum}
+
+\item Use methods based on natural language (not visual patterns) to express
+    detailed program logic
+
+\item Graphical elements should be used to represent structure, like links.
+
+\item Use methods based on natural language (not visual patterns) to represent
+    abstract concepts
+
+\item Complex information: separate components by their most efficient
+    representations: words (spoken/written) or images (static/moving). Use the
+    most cognitively efficient method for linking.
+
+\item Exploratory text should be as close as possible and graphically linked
+
+\item Presentations: speech should accompany graphics, not text
+
+\item Use deixis (arrow) to link speech and graphics
+
+\item Spoken words in visualization? Highlight components before speech.
+
+\item Principles for assembly diagram: clear narrative sequence, components
+    should be visible and identifiable, and spatial layout should be consistent
+    from one frame to the next.
+
+\item Use consistent representation from one part of a sequence to another.
+    Similar views of 3D objects.
+
+\item Use graphic devices to maintaint continuity from one view to another
+
+\item Break down animated instructions into short meaningful segments.
+    Allow users to play each separately.
+
+\item Animation of human figures to show how to make specific movements
+
+\end{compactenum}
+
+
+
+
+\subsection{Chapter 10}
+
+\e{Interacting with visualizations}
+
+\begin{compactenum}
+
+\item Fastest epistemic (knowledge or its validation) action: use hover
+    queries. Only when query targets are dense and inadvertant queries aren't
+    distracting.
+
+\item Non-dominant hand should control frame-of-reference, dominant should
+    make detailed selections
+
+\item Moving objects on screen? Make sure the object moves in the same general
+    direction as the hand
+
+\item 3D navigation: sufficient number of objects must be visible to judge the
+    relative view position.
+
+\item Overview map to speed up acquisition of a mental map
+
+\item Overview map to speed up large-scale navigation
+
+\item Make each landmark visually distinct
+
+\item Make landmarks recognizable as far as possible on all navigable scales
+
+\item 3D map data: default controls should allow for tilt around horizontal
+    and rotation around vertical, but not rotation around line of sight.
+
+\item Overview map? Provide a ``you are here'' indicator
+
+\item Navigation map should provide three views: north-up, track-up, track-up
+    perspective (default)
+
+\item Geometric fisheye distortion? allow maximum scale change of five
+
+\item Geometric fisheye distortion? Meaningful patterns must always be
+    recognizable.
+
+\item Zooming interface? Default scaling rate: 3 to 4 per second. Allow this to
+    be modified
+
+\item  Large 2D/3D data spaces? Consider providing one or more windows to show a
+    magnified part of space. In overview provide markers for the magnified
+    views.
+
+\end{compactenum}
+
+
+
+
+\subsection{Chapter 11}
+
+\e{Visual thinking process}
+
+\begin{compactenum}
+
+\item Design cognitive systems to maximize cognitive productivity
+
+\item Interactive node-link diagram? Provide pathfinding algorithm for
+    complex paths
+
+\item In large data spaces with small islands of critical information,
+    enable different viewports to show magnified areas. Useful for tasks that
+    require more than 3 visual working memory chunks.
+
+\end{compactenum}
+
+
+
+
+%\end{multicols}
+
+
+
+
