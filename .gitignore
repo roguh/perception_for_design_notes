@@ -21,3 +21,6 @@
 *.mtc1
 *.out
 *.synctex.gz
+*.stc[0-9]
+*.stc[0-9][0-9]
+*.mtc0
