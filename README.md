@@ -2,4 +2,6 @@
 
 Elegant and compact layout created using LaTeX.
 
+## [Download](./notes.pdf)
+
 ![preview.png](./preview.png)
