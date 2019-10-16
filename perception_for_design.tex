@@ -1,0 +1,111 @@
+\documentclass[letterpaper,10pt]{article}
+%\documentclass[a3paper,twocolumn,10pt]{article}
+\usepackage[bookmarks]{hyperref}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+% sans serif
+\renewcommand*{\familydefault}{\sfdefault}
+
+% pictures!
+\usepackage{graphicx}
+    % \begin{figure}[H][p]
+    %     \centering
+    %     \includegraphics[width=0.8\textwidth]{image.png}
+    %     \caption{Awesome Image}
+    %     \label{fig:awesome_image}
+    % \end{figure}
+
+% math++
+\usepackage{mathtools}
+\usepackage{amsfonts}
+
+% compact lists (compactitem, compactenum, compactdesc)
+\usepackage{paralist}
+
+% nicer tables
+\usepackage{booktabs}
+
+% layout
+\usepackage{float}
+
+% chemical equations
+\usepackage{mhchem}
+
+% text columns
+\usepackage{multicol}
+
+% dummy text
+\usepackage{lipsum}
+
+% frames around text
+\usepackage{mdframed}
+
+% section style
+\usepackage{sectsty}
+
+% margins
+\usepackage[top=0.25in, bottom=0.25in, left=0.25in, right=0.25in]{geometry}
+
+% per-section toc
+\usepackage[tight,insection]{minitoc}
+
+\mdfsetup{nobreak=false} %, rightline=false, leftline=false}
+
+% style
+\restylefloat{table}
+\sectionfont{\rmfamily}
+\subsectionfont{\rmfamily\centering}
+
+%ceiling/floor. use \ceil*{stuff} to scale symbols
+\DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+\DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+
+\renewcommand\thesection{\Roman{section}}
+
+\begin{document}
+
+\begin{center}
+\textbf{\huge
+  Summary of Colin Ware's ``Information Visualization: Perception for Design''
+}
+\\
+{\Large Hugo Rivera, Spring 2015}
+\end{center}
+
+Notes taken for Visualization CSE 476 taught at the New Mexico Institute of Mining and Technology, Spring 2015.
+
+Summarize chapters 1 to 11 and Appendix D.
+
+\dosecttoc
+\setlength{\mtcindent}{0pt}
+\setcounter{tocdepth}{1}
+
+\begin{multicols}{2}
+\tableofcontents
+\end{multicols}
+
+\def\stctitle{}
+
+ \input{ch1.tex}
+ \input{ch2.tex}
+ \input{ch3.tex}
+ \input{ch4.tex}
+ \input{ch5.tex}
+ \input{ch6.tex}
+ \input{ch7.tex}
+ \input{ch8.tex}
+ \input{ch9.tex}
+ \input{ch10.tex}
+ \input{ch11.tex}
+\begin{multicols}{2}
+%\setcounter{section}{-1}
+\input{appendix_d_guidelines.tex}
+\end{multicols}
+
+Licensed under CC BY-NC 3.0 US by Hugo O Rivera.
+
+{\itstyle These notes are incomplete. Read more by getting Colin Ware's ``Information Visualization: Perception for Design''. Images borrowed for educational fair use.}
+
+
+\end{document}
