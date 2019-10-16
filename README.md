@@ -2,7 +2,7 @@
 
 Elegant and compact layout created using LaTeX.
 
-## [Download](./notes.pdf)
+## [Download](./perception_for_design.pdf)
 
 ![preview.png](./preview.png)
 
