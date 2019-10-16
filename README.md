@@ -5,3 +5,9 @@ Elegant and compact layout created using LaTeX.
 ## [Download](./notes.pdf)
 
 ![preview.png](./preview.png)
+
+## License
+
+Images and content intended to be used for non-commercial educational purposes, "fair use."
+
+CC BY-NC 3.0 US
